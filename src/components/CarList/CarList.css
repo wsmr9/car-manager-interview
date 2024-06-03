@@ -1,0 +1,89 @@
+/* CarList.css */
+.car-list-container {
+    padding: 20px;
+    background: linear-gradient(to bottom, #333 0%, #222 100%);  /* Gradiente sutil de gris oscuro a más oscuro */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    border-radius: 8px;
+    margin: 20px 0px;
+    color: #fff; 
+    width: 100wh;
+    min-width: 900px;
+}
+
+.car-list-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.car-list-table thead th {
+    background-color: #444; /* Cabezera con un gris más oscuro */
+    color: white;
+    padding: 12px 15px;
+    border-bottom: 3px solid #666; /* Un gris ligeramente más claro para el borde */
+    text-align: left;
+}
+
+.car-list-table td, .car-list-table th {
+    padding: 12px;
+    border-bottom: 1px solid #555; /* Líneas de separación más oscuras para cada fila */
+}
+
+.car-list-table tbody tr:hover {
+    background-color: #2a2a2a; /* Un gris muy oscuro para el hover */
+    cursor: pointer;
+}
+
+button {
+    background-color: #007bff; /* Azul para los botones, por consistencia con el diseño de botones en otras partes */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px); /* Eleva el botón ligeramente para un efecto 3D */
+}
+
+.edit-btn {
+    background-color: #28a745;
+}
+
+.edit-btn:hover {
+    background-color: #218838;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+}
+
+.add-new-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.add-new-btn:hover {
+    background-color: #45A049;
+}
+
+.no-cars {
+    padding: 20px;
+    text-align: center;
+    background-color: #444; /* Fondo más oscuro para el mensaje de no datos */
+    color: #ccc; /* Texto en un gris claro */
+    font-size: 16px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,58 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.btn-primary {
+  background: linear-gradient(to right, #333, #444);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: #555;
+  transform: scale(1.05);
+}
+
+.create-btn {
+  background: linear-gradient(135deg, #000, #555);
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.create-btn:hover, .create-btn:focus {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(135deg, #222, #777);
+}
+
+.error-message {
+  color: #ff0000;
+  background-color: #fff0f0;
+  padding: 5px 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  font-size: 0.8em;
+  width: 100%;
+  box-sizing: border-box;
+  display: block;
+}

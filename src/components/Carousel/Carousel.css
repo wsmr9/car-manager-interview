@@ -1,0 +1,46 @@
+/* Carousel.css */
+.carousel-container {
+    overflow: hidden;
+    width: 100%;
+    max-width: calc( 100% - 50px); /* Ajusta según la anchura deseada para el carrusel */
+    height: 100px; /* Ajusta la altura del carrusel a 100px */
+    margin: auto;
+    position: relative;
+    display: flex;
+    align-items: center; /* Centra los elementos verticalmente dentro del contenedor */
+}
+
+.carousel-inner {
+    display: flex;
+    will-change: transform; /* Optimiza las transiciones */
+    animation: slide 500s linear infinite; /* Ajusta la duración según necesites para que el deslizamiento sea continuo */
+}
+
+.carousel-item {
+    flex: 0 0 25%; /* Ajusta para mostrar 4 imágenes */
+    max-width: 100px; /* Ajusta según el tamaño máximo deseado de las imágenes */
+    position: relative;
+    margin: 0px 10px;
+    height: 100%; /* Usa el 100% de la altura del contenedor del carrusel */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Asegura que las imágenes están centradas verticalmente */
+}
+
+.carousel-item img {
+    max-width: 100%; /* Asegura que el ancho de la imagen no exceda el contenedor */
+    max-height: 100%; /* Asegura que la altura de la imagen no exceda 100px */
+    object-fit: contain; /* Asegura que las imágenes no se distorsionen y se ajusten bien */
+    transition: opacity 0.5s ease-out;
+    opacity: 0.6;
+    height: 100px;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-400%); /* Deslizamiento hasta que todas las imágenes hayan pasado */
+    }
+}

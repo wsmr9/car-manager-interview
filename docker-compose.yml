@@ -1,0 +1,14 @@
+version: '3.3'  # Specifies the version of the Docker Compose file format.
+
+services:
+
+  # React application service
+  react-app:
+    build:
+      context: .  # Specifies the directory containing the Dockerfile and source code.
+      dockerfile: Dockerfile  # Explicit Dockerfile to use.
+    ports:
+      - "3000:80"  # Mapping port 80 of the container to port 3000 of the host.
+    environment:
+      NODE_ENV: production  # Set environment to production for optimizations.
+    restart: unless-stopped  # Restart policy to handle crashes and reboots.

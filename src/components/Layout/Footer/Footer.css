@@ -1,0 +1,15 @@
+/* Footer.css */
+.footer {
+    margin-top: auto;
+    background: linear-gradient(to right, #000, #444);
+    color: #fff;
+    padding: 30px 20px;
+    text-align: center;
+    font-size: 18px;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.footer p {
+    margin: 0;
+    font-weight: bold;
+}
