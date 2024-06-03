@@ -14,7 +14,7 @@ This guide will walk you through the setup and installation process for the Reac
 Clone the project repository and navigate into the directory:
 
 ```bash
-    git https://github.com/wsmr9/car-manager-interview.git
+    git clone https://github.com/wsmr9/car-manager-interview.git
     cd car-manager-interview
 ```
 
