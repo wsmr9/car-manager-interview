@@ -1,4 +1,3 @@
-/* CarItem.css */
 .car-item button {
     color: #fff;
     border: none;
@@ -8,22 +7,22 @@
     border-radius: 8px;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
-    margin: 2px; /* Añade un pequeño margen para separar los botones */
+    margin: 2px;
 }
 
 .car-item button.view {
-    background: linear-gradient(135deg, #28a745, #34d058); /* Gradiente verde para el botón View */
+    background: linear-gradient(135deg, #28a745, #34d058);
 }
 
 .car-item button.delete {
-    background: linear-gradient(135deg, #dc3545, #c82333); /* Gradiente rojo para el botón Delete */
+    background: linear-gradient(135deg, #dc3545, #c82333);
 }
 
 .car-item button:hover {
-    transform: translateY(-3px); /* Elevación sutil al interactuar */
+    transform: translateY(-3px);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 .car-item td:last-child {
-    text-align: center; /* Centra los botones en su columna */
+    text-align: center;
 }

@@ -1,14 +1,14 @@
 /* Header.css */
 .main-header {
 
-    background: linear-gradient(to right, #000, #444); /* Gradiente de negro a gris oscuro */
-    color: #fff; /* Texto en blanco para un alto contraste */
+    background: linear-gradient(to right, #000, #444);
+    color: #fff;
     padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; /* Espaciamiento entre el logo y el título */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra sutil para añadir profundidad */
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 .header-logo-container {

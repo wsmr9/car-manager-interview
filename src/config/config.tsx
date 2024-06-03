@@ -1,3 +1,5 @@
+// List of image URLs for car brands. These are used throughout the application
+// to display logos or related imagery for each brand.
 const carBrandsImages = [
     "https://pngimg.com/d/rolls_royce_PNG27.png",
     "https://pngimg.com/d/bentley_PNG37.png",
@@ -25,11 +27,14 @@ const carBrandsImages = [
     "https://1000logos.net/wp-content/uploads/2024/01/Rimac-Logo.jpg",
     "https://1000logos.net/wp-content/uploads/2021/11/Lucid-Motors-Logo.png",
     "https://seeklogo.com/images/F/fisker-logo-845743FA01-seeklogo.com.png?v=638266620090000000"
-]
+];
 
+// Configuration object for the application.
 const config = {
-    carEndpoint : process.env.REACT_APP_CARS_ENDPOINT,
-    carBrandsImages : carBrandsImages
-}
+    // API endpoint for car data, specified in the environment variables.
+    carEndpoint: process.env.REACT_APP_CARS_ENDPOINT,
+    // Array of car brand images URLs.
+    carBrandsImages: carBrandsImages
+};
 
 export default config;
